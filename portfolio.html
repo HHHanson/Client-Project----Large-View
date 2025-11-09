@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio</title>
+<link href="css/html5reset.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<!--Content taken & modified from UMGPT with the prompt, "Write me a webpage of intro and body content to help meet the following requirements - this is for the networking and connections page": and then pasted in the client objectives & project requirements"
+        UMGPT. (2025). UMGPT ( GPT-4.1 September 7th version) [Large language model]. -->
+</head>
+<body>
+<header id="top">
+<a class="skip-link" href="#main">Skip to Main Content</a>
+<img alt="UMSI Logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg"/>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="resume.html">Resumes</a></li>
+<li><a href="networking.html">Networking &amp; Connections</a></li>
+<li><a aria-current="page" href="portfolio.html">Portfolio</a></li>
+</ul>
+</nav>
+<h1>Portfolio</h1>
+</header>
+<main id="main">
+<section>
+<h2>Why Your Portfolio Matters</h2>
+<p>Portfolio is very important</p>
+<blockquote>
+        “A strong portfolio shows your process and impact—not just final screens. It makes your role, decisions, and outcomes easy to understand for reviewers.”
+        <br/><small>— Generated with UM GPT</small>
+</blockquote>
+</section>
+<section>
+<h2>What to Include</h2>
+<blockquote>
+        “Include 2–4 high-quality case studies. For each, clearly present:
+        <br/>• Context &amp; problem statement
+        <br/>• Your role, scope, and methods
+        <br/>• Key process artifacts (research plans, IA/flows, sketches, wireframes, prototypes, usability insights)
+        <br/>• Outcomes and impact (quantitative metrics and/or qualitative feedback)
+        <br/>• Reflection: what you learned and what you would improve next time.”
+        <br/><small>— Generated with UM GPT</small>
+</blockquote>
+</section>
+<section>
+<h2>Project Images</h2>
+<figure>
+<img alt="Portfolio project image 1" loading="lazy" src="images/portfolio1.png"/>
+<figcaption>
+<small>Source:
+            <a href="https://www.brandedbyjim.com/product-page/strategy-presentation-template?pp=0&amp;epik=dj0yJnU9b3dTYk5MTXlpQ3pkWGRydzhzS25tU0Y3N21WVFNBbUcmcD0xJm49WkcwYXpjR3dCcEd4YnlCOVZfTlhXUSZ0PUFBQUFBR2k5OC1F" rel="noopener" target="_blank">brandedbyjim.com – Strategy Presentation Template</a>
+</small>
+</figcaption>
+</figure>
+<figure>
+<img alt="Portfolio project image 2" loading="lazy" src="images/portfolio2.png"/>
+<figcaption>
+<small>Source:
+            <a href="https://www.kseniiakrasilich.com/squarespace-templates/p/accountant-squarespace-71-template" rel="noopener" target="_blank">kseniiakrasilich.com – Accountant - Squarespace 7.1 Template</a>
+</small>
+</figcaption>
+</figure>
+</section>
+<section>
+<h2>Helpful Links</h2>
+<blockquote>
+        “Use these references to plan structure, scope, and storytelling for your case studies.”
+        <br/><small>— Generated with UM GPT</small>
+</blockquote>
+<ul>
+<li><p><a href="https://docs.google.com/document/d/1xw46Cm9DzC2wVQFxr_Ct96kbddhAhchzqUJpJJTSESc/edit?tab=t.0" rel="noopener" target="_blank">Portfolio Planning Guide (Doc)</a></p></li>
+<li><p><a href="https://docs.google.com/document/d/1i7B6OXVY3tD9ULkVViF6yk2N16Ell1w9KhCzM7WEmTk/edit?tab=t.0" rel="noopener" target="_blank">Case Study Outline &amp; Prompts (Doc)</a></p></li>
+<li><p><a href="https://docs.google.com/document/d/10ftmYAc1vs6yYSIAuGIkAvwC21Z1HDM0WyKTaZZzqUo/edit?tab=t.0" rel="noopener" target="_blank">Evidence &amp; Metrics Checklist (Doc)</a></p></li>
+<li><p><a href="https://docs.google.com/document/d/1C-rxX5VcjVH7YjMdHil1VMo9ZdSOHmausOcX61dld-g/edit?tab=t.0#heading=h.ayhw1mebgwyh" rel="noopener" target="_blank">Reflection &amp; Next-Steps Template (Doc)</a></p></li>
+</ul>
+</section>
+</main>
+<footer>
+<p>University of Michigan School of Information | <a href="https://umsi.instructure.com/courses/137916">UMSI Career Development Office</a> • <span class="year"></span></p>
+<p>© <span id="year"></span> UMSI. All rights reserved.</p>
+</footer>
+<a aria-label="Back to top" class="back-to-top" href="#top" id="back-to-top">↑ Top</a><script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+
+window.onload = function () {
+  var btn = document.getElementById("back-to-top");
+  var timer = null;
+  var isTop = true;
+
+  window.onscroll = function () {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+
+    if (!isTop) {
+      clearInterval(timer);
+    }
+    isTop = false;
+  };
+
+  btn.onclick = function () {
+    timer = setInterval(function () {
+      var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+
+      var speed = Math.floor(-osTop / 5);
+
+      document.documentElement.scrollTop = document.body.scrollTop = osTop + speed;
+
+      isTop = true;
+
+      if (osTop === 0) {
+        clearInterval(timer);
+      }
+    }, 5);
+  };
+};
+</script></body>
+<!-- Content and script logic adapted from:
+     Wang, F. (2016). “实现返回顶部效果的3种方式”.
+     Retrieved from https://frankwang0909.github.io/back-to-top.html 
+-->
+</script></body>
+</html>
