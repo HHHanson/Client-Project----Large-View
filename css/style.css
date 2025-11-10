@@ -40,6 +40,12 @@ header img {
   height: auto;
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
 nav ul {
   display: grid;
   grid-template-columns: repeat(4, 150px);
